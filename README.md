@@ -59,8 +59,8 @@ ml_assignment_BT2024004/
 
 1. **Clone the repository:**
    ```bash
-   git clone <YOUR_REPO_URL>
-   cd ml_assignment_BT2024004
+   git clone https://github.com/Kabir646/BT2024004-polynomial-regression.git
+   cd BT2024004-polynomial-regression
    ```
 
 2. **Create a virtual environment (optional but recommended):**

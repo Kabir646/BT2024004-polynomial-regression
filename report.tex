@@ -25,7 +25,7 @@
     \textbf{Student Roll Number: BT2024004} \\
     Department of Computer Science and Engineering \\
     Machine Learning Assignment: Polynomial Regression \\
-    \textbf{GitHub Repository:} \href{https://github.com/Kabir646/ml_assignment_BT2024004}{\texttt{https://github.com/Kabir646/ml\_assignment\_BT2024004}}
+    \textbf{GitHub Repository:} \href{https://github.com/Kabir646/BT2024004-polynomial-regression}{\texttt{https://github.com/Kabir646/BT2024004-polynomial-regression}}
 }
 
 \date{\today}
@@ -35,7 +35,7 @@
 \maketitle
 
 \begin{abstract}
-\noindent This report presents a rigorous empirical and theoretical investigation into multivariate polynomial regression modeling for two core challenges in geothermal energy engineering: (i) \textbf{Phase 1 (var1)}, optimizing surface steam turbine efficiency from six operational parameters ($x_1, \dots, x_6$), and (ii) \textbf{Phase 2 (var2)}, reconstructing a 3D subterranean thermal reservoir anomaly map from spatial core samples ($x_1, x_2, x_3$). In strict compliance with the assignment directive of utilizing only polynomial regression, all final submitted test predictions are generated using unregularized Ordinary Least Squares (OLS) polynomial models at their mathematically identified optimal degrees. Through 10-fold cross-validation, Akaike/Bayesian Information Criteria (AIC/BIC), and condition number diagnostics, we resolve the bias-variance tradeoff: Phase 1 attains optimal generalization at \textbf{Degree 4} ($\text{CV MSE} = 0.67795, R^2 = 0.93066$), successfully capturing higher-order physical interactions while avoiding the variance explosion of Degree 5 ($p = 462$); Phase 2 achieves its global validation minimum at \textbf{Degree 8} ($\text{CV MSE} = 0.29161, R^2 = 0.99295, \text{BIC} = -549.27$), accurately resolving subterranean thermal plumes before boundary Runge oscillations occur. In addition, $L_2$ (Ridge) and $L_1$ (Lasso) regularizations are investigated as comparative diagnostic techniques to evaluate coefficient stability and feature sparsity. All prediction CSV files and reproducible code are provided via GitHub: \href{https://github.com/Kabir646/ml_assignment_BT2024004}{\texttt{https://github.com/Kabir646/ml\_assignment\_BT2024004}}.
+\noindent This report presents a rigorous empirical and theoretical investigation into multivariate polynomial regression modeling for two core challenges in geothermal energy engineering: (i) \textbf{Phase 1 (var1)}, optimizing surface steam turbine efficiency from six operational parameters ($x_1, \dots, x_6$), and (ii) \textbf{Phase 2 (var2)}, reconstructing a 3D subterranean thermal reservoir anomaly map from spatial core samples ($x_1, x_2, x_3$). In strict compliance with the assignment directive of utilizing only polynomial regression, all final submitted test predictions are generated using unregularized Ordinary Least Squares (OLS) polynomial models at their mathematically identified optimal degrees. Through 10-fold cross-validation, Akaike/Bayesian Information Criteria (AIC/BIC), and condition number diagnostics, we resolve the bias-variance tradeoff: Phase 1 attains optimal generalization at \textbf{Degree 4} ($\text{CV MSE} = 0.67795, R^2 = 0.93066$), successfully capturing higher-order physical interactions while avoiding the variance explosion of Degree 5 ($p = 462$); Phase 2 achieves its global validation minimum at \textbf{Degree 8} ($\text{CV MSE} = 0.29161, R^2 = 0.99295, \text{BIC} = -549.27$), accurately resolving subterranean thermal plumes before boundary Runge oscillations occur. In addition, $L_2$ (Ridge) and $L_1$ (Lasso) regularizations are investigated as comparative diagnostic techniques to evaluate coefficient stability and feature sparsity. All prediction CSV files and reproducible code are provided via GitHub: \href{https://github.com/Kabir646/BT2024004-polynomial-regression}{\texttt{https://github.com/Kabir646/BT2024004-polynomial-regression}}.
 \end{abstract}
 
 \section{Introduction}
@@ -305,7 +305,7 @@ Prediction Rows & 1,000 & 1,000 \\
 \begin{enumerate}
     \item \textbf{Prediction Files}: \texttt{BT2024004\_pred\_var1.csv} and \texttt{BT2024004\_pred\_var2.csv} match the sample submission format with single header \texttt{y} and 1,000 predicted continuous values without any nulls.
     \item \textbf{Report}: This LaTeX document provides full theoretical, experimental, and physical justification.
-    \item \textbf{Code Repository}: Fully documented open-source repository containing modular data loading, training, cross-validation, plotting, and inference pipelines: \href{https://github.com/Kabir646/ml_assignment_BT2024004}{\texttt{https://github.com/Kabir646/ml\_assignment\_BT2024004}}.
+    \item \textbf{Code Repository}: Fully documented open-source repository containing modular data loading, training, cross-validation, plotting, and inference pipelines: \href{https://github.com/Kabir646/BT2024004-polynomial-regression}{\texttt{https://github.com/Kabir646/BT2024004-polynomial-regression}}.
 \end{enumerate}
 
 \section{Conclusion}
