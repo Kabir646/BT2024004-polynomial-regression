@@ -37,7 +37,7 @@ env/
 *.swp
 *.swo
 
-# LaTeX auxiliary files (keep report.tex and report.pdf)
+# LaTeX auxiliary files
 *.aux
 *.bbl
 *.blg
@@ -47,3 +47,8 @@ env/
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+
+# Excluded from GitHub per submission policy
+figures/
+report.tex
+generate_plots.py
